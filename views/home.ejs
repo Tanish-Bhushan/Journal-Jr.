@@ -1,0 +1,26 @@
+<%- include('./partials/header'); -%>
+<link rel="stylesheet" href="css/home_styles.css">
+</head>
+
+<body>
+    <div>
+        <div class="btndiv">
+            <form action="/" method="get">
+                <button type="submit" class="logoutbtn"><i class="fa fa-sign-out" aria-hidden="true"></i></button>
+            </form>
+            <div class="journal">
+                <h1>JOURNAL Jr.<i class="fa-solid fa-feather fa-2xs" style="color: #000000;"></i></h1>
+            </div>
+            <form action="/compose" method="get">
+                <button type="submit" class="btn"></button>
+            </form>
+        </div>
+    </div>
+    <% blogs.forEach(function(el) { %>
+    <div class="data">
+        <h1><%= el.user_title %></h1>
+        <p><%= el.user_data %></p>
+    </div>
+
+    <% }) %>
+    <%- include('./partials/footer'); -%>

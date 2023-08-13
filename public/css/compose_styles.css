@@ -1,0 +1,10 @@
+.container {
+  margin-top: 10%;
+  width: 80%;
+}
+.side {
+  text-align: left;
+}
+.form-control {
+  margin: 10px;
+}
